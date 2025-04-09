@@ -40,6 +40,27 @@
 <div class="box" id="g1">
 <b>monster high g1</b>
 <hr>
+
+<div class="row"> 
+  <div class="column">
+    <div class="tooltip"><span class="tooltiptext">i heart accessories / scaritage operetta<img src="https://mhcollector.com/wp-content/uploads/2015/07/Scaritage-Operetta.jpg" style="width:100%"></span></div>
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="/w3images/wedding.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/w3images/underwater.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+
+
+  
 <div class="scroll">
 <div class="responsive">
   <div class="gallery">
@@ -260,55 +281,65 @@ button:hover {
     color:black;
     transition: 0.3s;
 }
-.gallery {
-  border: 1px solid #ccc;
-}
-
-.gallery:hover {
-  border: 1px solid #777;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 * {
   box-sizing: border-box;
 }
 
-.responsive {
-  padding: 0px;
-  float: left;
-  width: 7.6%;
+body {
+  margin: 0;
+  font-family: Arial;
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+.header {
+  text-align: center;
+  padding: 32px;
 }
-#g1 {
-  height:746px;
-  overflow-x:auto;
-  overflow-y:hidden;
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
-#minis {
-  height:746px;
-  overflow-x:auto;
-  overflow-y:hidden;
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
-.scroll {
-  width:2954px;
-  height:643px;
-  overflow-x:auto;
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
-#mini {
-  width:7.8%;
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 </style>
