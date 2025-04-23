@@ -30,84 +30,339 @@
 <meta name="description" content="my site!" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex">
+<script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+  type="text/javascript"
+></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mystery+Quest&display=swap" rel="stylesheet">
 
-<center>
-<b>gorgedolls - gorge.monster</b><br><br>
-hey, i like to collect dolls :)<br><br>
-<b>buying soon:</b><br>
-reel drama lagoona creeproduction ♡ Aug 2025
-<br><br>
+<img src="https://tohellwithit.nekoweb.org/Operetta_1_-removebg-preview.png" style="position:fixed; top:0px; left:-3px; width:250px;" class="draggable">
+<div class="main">
+<div class="nav">
+<a onclick="openCity(event, 'log')">collect log</a><br>
+<a onclick="openCity(event, 'wishlist')">my wishlist</a><br>
+<a onclick="openCity(event, 'collection')">my collection</a><br>
+<br>
+<img src="https://gorge.monster/graphics/freakyfab.gif"><br>
+<img src="https://gorge.monster/graphics/monster.gif"><br>
+<img src="https://gorge.monster/graphics/venus.gif"><br>
 
-<a href="/"><button>home</button></a><a href="/wishlist"><button>my wishlist</button></a><a href="/collection"><button>my collection</button></a><a href="/art"><button>my art</button></a>
-<br><br>
-<img src="https://gorge.monster/graphics/operetta.png" height="250px" id="mwah"><img src="https://gorge.monster/graphics/cattynoir.png" height="250px" id="mwah"><img src="https://gorge.monster/graphics/lagoona.png" height="250px" id="mwah">
-<br><br>
-links:
+</div>
+<footer>gorge.monster
 <br>
-<a href="https://monsterhigh.fandom.com/wiki/Characters/students">mh wiki</a>
+<div class="counter">
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40335894&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=40335894&main=1" /></noscript>
+</div>
+</footer>
+</div>
+
+<img src="https://tohellwithit.nekoweb.org/db5o0xg-e012b03d-34c4-4941-bd1a-c09624160c80.png" id="operetta" style="position:fixed; top:10px; left:140px; width:250px;">
+<img src="https://tohellwithit.nekoweb.org/89028cfcca09e0aba27a6bfec6992a67-removebg-preview.png" id="dice" style="position:fixed; top:190px; left:575px; z-index:12; width:100px;">
+<img src="https://tohellwithit.nekoweb.org/Profile_art_-_Memphis_Longlegs-removebg-preview.png" id="memphis" style="position:fixed; top:-1px; left:665px; z-index:11; width:100px;">
+
+<div class="soon">
+<span id="operetta">buying soon:</span><br>
+reel drama lagoona creepro ♡ Aug 2025
+</div>
+
+<div class="me">
+hey, i like to collect dolls :)<br>
+17 he/they<br>
+New Goreleans<br>
+<span id="operetta">operetta</span>, <span id="lagoona">lagoona</span>, <span id="catty">catty noir</span>
+</div>
+
+<img src="https://tohellwithit.nekoweb.org/tv_template-removebg-preview.png" id="tv" style="position:fixed; top:360px; left:360px; z-index:1; width:300px;">
+<div class="tv">
+<iframe width="223" height="176" src="https://www.youtube.com/embed/OvhXKOMMk9o?si=0MDiPNNh1dZzfe4D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<!-- pages -->
+
+<div id="log" class="tabcontent" style="display:none">
+collect log<br>
+<div class="blog">
+4/23/25<hr>
+working on this site and also got a g3 venus recently when she went on clearance for $11 on target. Been getting more into pokemon cards though... my interests are constantly changing.
+</div>
+</div>
+
+<div id="wishlist" class="tabcontent" style="display:none">
+monster high g1 (hover for names)<br>
+<div class="row"> 
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/07/Scaritage-Operetta.jpg" style="width:100%"><span class="tooltiptext">i heart accessories / scaritage operetta</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2022/09/Reel-Drama-Lagoona-Blue-1.jpg" style="width:100%"><span class="tooltiptext">reel drama lagoona</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/06/Scaris-Catrine-DeMew.jpg" style="width:100%"><span class="tooltiptext">scaris catrine demew</span></div>
+  </div>
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2024/04/Outta-Fright-Operetta-8-1.jpg" style="width:100%"><span class="tooltiptext">outta fright operetta</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/03/Hydration-Station-Lagoona-Blue-open.jpg" style="width:100%"><span class="tooltiptext">dead tired lagoona</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/05/New-Scaremester-Catty-Noir.jpg" style="width:100%"><span class="tooltiptext">new scaremester catty noir</span></div>
+  </div>  
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/05/Picture-Day-Operetta.jpg" style="width:100%"><span class="tooltiptext">picture day operetta</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/06/Frights-Camera-Action-Honey-Swamp.jpg" style="width:100%"><span class="tooltiptext">honey swamp</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/05/Catty-Noir.jpg" style="width:100%"><span class="tooltiptext">catty noir</span></div>
+  </div>
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/03/Classroom-Lagoona-Blue.jpg" style="width:100%"><span class="tooltiptext">classroom lagoona</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/05/Wave-4-Venus-McFlytrap.jpg" style="width:100%"><span class="tooltiptext">venus mcflytrap</span></div>
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2016/04/Ghoulebrities-in-Londoom-3-pack-s.jpg" style="width:100%"><span class="tooltiptext">Ghoulebrities in Londoom</span></div>
+        <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2015/06/Draculaura-Operetta-Die-ner.jpg" style="width:100%"><span class="tooltiptext">die-ner operetta & draculaura</span></div>
+  </div>
+</div>
 <br>
-<a href="https://mhcollector.com/">mh collector</a>
+monster high minis
 <br>
-<a href="https://monsterhigh.fandom.com/wiki/Dolls/2025">2025 mh dolls</a>
+<div class="row"> 
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2017/09/Mermaid-Ghouls-Minis-Catty-Noir-1.jpg" style="width:100%"><span class="tooltiptext">mermaid catty noir</span></div>
+    <div class="tooltip"><img src="https://4.bp.blogspot.com/-3zay5wjk52s/V1AG7V1sxzI/AAAAAAAAlSU/xpNE0Y-5guwfpeIzsgU3L_Yc5j8HSNRVwCLcB/s1600/Lagoona-Series-1-Rag-Doll-Ghoul-Mini-Figure-1.jpg" style="width:100%"><span class="tooltiptext">rag doll lagoona</span></div>
+  </div>
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2017/08/Geek-Shriek-Ghouls-Minis-Catty-Noir-1.jpg" style="width:100%"><span class="tooltiptext">geek shriek catty noir</span></div>
+  </div>  
+  <div class="column">
+    <div class="tooltip"><img src="https://2.bp.blogspot.com/-5Mug0E_chuQ/Vwd-IF_neVI/AAAAAAAAjX4/GO0uNaZYzpE5BwBM5DXSwPZRD79KLL7DA/s1600/Catty-Series-1-Rag-Doll-Ghoul-Mini-Figure-1.jpg" style="width:100%"><span class="tooltiptext">rag doll catty noir</span></div>
+  </div>
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2016/11/Original-Ghouls-Minis-Catrine-DeMew-s.jpg" style="width:100%"><span class="tooltiptext">catrine demew</span></div>
+  </div>
+</div>
 <br>
+monster high g3
+<br>
+<div class="row"> 
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2024/03/Catty-Noir.jpg" style="width:100%"><span class="tooltiptext">g3 catty noir</span></div>
+  </div>
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2024/05/RuPaul-Dragon-Queen-9.jpg" style="width:100%"><span class="tooltiptext">rupaul dragon queen</span></div>
+  </div>
+  <div class="column">
+    <div class="tooltip"><img src="https://mhcollector.com/wp-content/uploads/2024/03/Core-Refresh-Lagoona-Blue.jpg" style="width:100%"><span class="tooltiptext">core refresh lagoona</span></div>
+  </div>
 </div>
 
 <br>
-<img src="https://gorge.monster/graphics/freakyfab.gif"><img src="https://gorge.monster/graphics/monster.gif"><img src="https://gorge.monster/graphics/venus.gif"><br>
-<img src="https://gorge.monster/graphics/mhigh.png" title="@irldenji on tumblr"><img src="https://gorge.monster/graphics/monsterhigh.gif" title="@irldenji on tumblr"><img src="https://gorge.monster/graphics/lagoona2.png" title="@irldenji on tumblr">
+barbies
 <br>
-© 2025 gorge . all rights reserved
-
-<div class="pagedoll">
-<img src="https://gorge.monster/graphics/cattyside.png">
+<div class="row"> 
+  <div class="column">
+    <div class="tooltip"><img src="https://cdn9.mavin.io/production/soldItems/218802856/images/image-0.jpg" style="width:100%"><span class="tooltiptext">2009 then and now bathing suit barbie</span></div>
+  </div>
+  <div class="column">
+  </div>  
+  <div class="column">
+  </div>
+  <div class="column">
+  </div>
 </div>
+
+</div>
+
+<div id="collection" class="tabcontent" style="display:none">
+my collection<br>
+<div class="row"> 
+  <div class="column2">
+    <div class="tooltip"><img src="http://live.staticflickr.com/65535/54410491621_6e97540a94_k.jpg" style="width:100%"><span class="tooltiptext">my desk</span></div>
+    <div class="tooltip"><img src="https://live.staticflickr.com/65535/54443837283_e8113beebd_k.jpg" style="width:100%"><span class="tooltiptext">operetta ♡</span></div>
+  </div>
+  <div class="column2">
+    <div class="tooltip"><img src="https://live.staticflickr.com/65535/54443597321_fbc2cb4b90_b.jpg" style="width:100%"><span class="tooltiptext">my bookshelf</span></div>
+    <div class="tooltip"><img src="https://live.staticflickr.com/65535/54443971280_e8261ae1b3_k.jpg" style="width:100%"><span class="tooltiptext">shoppies and lagoona</span></div>
+  </div> 
+</div>
+
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 <style>
 body {
-    background-color:#ff79b9;
-    color:white;
-    font-size:25px;
-    font-family:courier;
-}
+      background-color:#b21f13;
+      color:white;
+  font-family: "Mystery Quest", system-ui;
+  font-size:20px;
+      scrollbar-width: auto;
+    scrollbar-color: #da3272 white;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    }
 a {
-    color:#75ffff;
+        color:#fbba07;
+    }
+a:hover {
+    color:#da3272;
+    transition:0.5s;
 }
-.pagedoll {
-  position:fixed;
-  bottom:-11px;
-  right:0px;
-  pointer-events:none;
+.main {
+    width:300px;
+    height:1000px;
+    margin-left:0px;
+    margin-top:0px;
 }
-#pic {
-    border:1px solid black;
+.nav {
+    width:220px;
+    border:3px solid black;
+    padding:5px;
+    margin-top:60px;
+    margin-left:-4px;
+    background: linear-gradient(0deg, rgba(0, 0, 0,0.5), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/736x/bf/01/55/bf015538d8419da4848b3cef0cc85cce.jpg");
 }
-.box {
-    border:3.5px double black;
-    padding:10px;
-    background-color:#4b8a8e;
+.me {
+    width:300px;
+    height:120px;
+    border:3px solid black;
+    padding:5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/736x/f0/c2/2e/f0c22e42f859f4a11b145cbe07130443.jpg");
+    position:fixed; top:220px; left:330px;
+}
+.tv {
+    width:223px;
+    height:174px;
+    border:3px solid black;
+    position:fixed; top:393px; left:400px;
+    z-index:2;
+    border-radius:11px;
+    background-color:black;
+}
+span#operetta {
+    color:#fbba07;
+}
+span#lagoona {
+    color:#4fb7be;
+}
+span#catty {
+    color:#da3272;
+}
+.soon {
+    width:350px;
+    height:100px;
+    border:3px solid black;
+    padding:5px;
+    background: linear-gradient(0deg, rgba(0, 0, 0,0.7), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/736x/55/25/67/552567d5b8eb514247b13112e02db7fe.jpg");
+    background-size:360px;
+    position:fixed; top:70px; left:395px;
+}
+#memphis:hover {
+    transform:scale(0.95);
+    transition:0.5s;
+}
+#operetta:hover {
+    transform:scale(0.95);
+    transition:0.5s;
+}
+#dice:hover {
+    transform:rotate(360deg);
+    transition:1.5s;
+}
+.tabcontent {
+    width:650px;
+    height:650px;
+    background: linear-gradient(0deg, rgba(0, 0, 0,0.5), rgba(0, 0, 0, 0.6)), url("https://i.pinimg.com/736x/bf/01/55/bf015538d8419da4848b3cef0cc85cce.jpg");
+    background-size:1000px;
+    color:white;
+    position:fixed;
+    right:10px;
+    top:10px;
+    padding:5px;
+    text-align:center;
+    overflow-x:hidden;
+    overflow-y:auto;
+    border:3px solid black;
+    z-index:100;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 23%;
+  max-width: 23%;
+  padding: 0 4px;
+}
+
+.column2 {
+-ms-flex: 50%; /* IE10 */
+  flex: 45%;
+  max-width:55%;
+  padding: 0 4px;
+}
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border:1px solid #da3272;
+  border-radius:10px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  border:1px solid #da3272;
+  border-radius:10px;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: #da3272;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.counter {
+    margin-top:5px;
+}
+.blog {
+    width:640px;
+    border:1px solid white;
+    padding:5px;
+    font-family: "Times New Roman", Times, serif;
 }
 hr {
-    border:2px solid white;
-    border-radius:20px;
-}
-#mwah {
-    -webkit-filter: drop-shadow(2px 1px 0 white)
-                  drop-shadow(-1px -1px 0 white);
-  filter: drop-shadow(2px 1px 0 white) 
-          drop-shadow(-1px -1px 0 white);
-}
-button {
-    background-color:#4b8a8e;
-    color:white;
-    border:1px solid white;
-    border-radius:20px;
-    width:150px;
-    height:50px;
-    cursor: pointer;
-}
-button:hover {
-    border:1px solid black;
-    color:black;
-    transition: 0.3s;
+    border:0.5px solid white;
 }
 </style>
